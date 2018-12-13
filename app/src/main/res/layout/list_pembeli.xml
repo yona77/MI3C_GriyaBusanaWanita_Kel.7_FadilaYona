@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Nama Pembeli"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvIdPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_marginTop="5dp"
+            android:hint="Id Pembeli"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdPembeli"
+            android:layout_marginTop="5dp"
+            android:hint="Alamat :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAlamatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamat"
+            android:layout_marginTop="2dp"
+            android:hint="Jl. Lawang"
+            android:textSize="16sp"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/tvTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamatContent"
+            android:layout_marginTop="2dp"
+            android:hint="Telp :"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvTelpContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelp"
+            android:layout_marginTop="2dp"
+            android:hint="0857457777"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

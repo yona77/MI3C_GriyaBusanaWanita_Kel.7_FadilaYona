@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarInsertBaju">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgAddGambar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/Blouse" />
+
+        <Button
+            android:id="@+id/btAddGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAddGambar"
+            android:text="Pilih Foto" />
+
+        <Button
+            android:id="@+id/btAddFt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btAddGambar"
+            android:text="Ambil Foto"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddFt"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Nama Baju :"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtAddBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddBaju"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddBaju"
+            android:hint="Blouse Collar"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddBaju"
+            android:text="Kategori :"
+            android:layout_marginTop="5pt"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtAddKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddKategori"
+            android:layout_alignLeft="@+id/edtAddBaju"
+            android:layout_alignParentEnd="true"
+            android:hint="Blouse"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddKategori"
+            android:text="Harga :"
+            android:layout_marginTop="5pt"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtAddHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddHarga"
+            android:layout_alignLeft="@+id/edtAddBaju"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddHarga"
+            android:hint="Rp 64000"
+            android:inputType="phone"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddHarga"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btAddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/dark"
+                android:text="SUBMIT"/>
+
+            <Button
+                android:id="@+id/btAddBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/indigo"
+                android:textColor="@color/white"
+                android:text="BACK"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvIdTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ID Transaksi :"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvIdPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Pembeli :"
+            android:layout_below="@id/tvIdTransaksi"
+            tools:ignore="UnknownId" />
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total Harga :"
+            android:layout_below="@id/tvIdPembeli"
+            />
+        <TextView
+            android:id="@+id/tvIdBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Baju :"
+            android:layout_below="@id/tvTotalHarga"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/dark"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</LinearLayout>

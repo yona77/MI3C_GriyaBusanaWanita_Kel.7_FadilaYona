@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="com.example.fadilayona.griyabusanawanita.LayarEditBaju">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgGambar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/Blouse"/>
+
+        <Button
+            android:id="@+id/btGambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgGambar"
+            android:layout_centerHorizontal="true"
+            android:text="Pilih Foto"/>
+
+        <TextView
+            android:id="@+id/tvIdBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btGambar"
+            android:layout_marginTop="10dp"
+            android:text=" "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtIdBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdBaju"
+            android:layout_toRightOf="@+id/tvIdBaju"
+            android:hint=""
+            android:textSize="16dp"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/tvNamabaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdBaju"
+            android:text="Nama Baju :  "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtNamabaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvNamabaju"
+            android:layout_toEndOf="@+id/tvNamabaju"
+            android:hint="Blouse Collar"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/tvNamabaju" />
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamabaju"
+            android:text="Kategori : "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtIdBaju"
+            android:layout_toEndOf="@+id/tvNamabaju"
+            android:hint="Blouse"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/tvNamabaju" />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKategori"
+            android:text="Harga : "
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtNamabaju"
+            android:layout_toEndOf="@+id/tvNamabaju"
+            android:hint="Rp 45000"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/tvNamabaju" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHarga"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textColor="@color/dark"
+                android:background="@color/plum" />
+
+            <Button
+                android:id="@+id/btDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="@color/indigo"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pesan"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:textSize="20dp"
+            android:inputType="textMultiLine"/>
+    </RelativeLayout>
+</ScrollView>

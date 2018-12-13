@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layardetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".LayarDetail">
+    <TextView
+        android:id="@+id/tvIdTransaksi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Transaksi : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvIdPembeli2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Pembeli : "
+        android:layout_below="@id/tvIdTransaksi2"
+        android:textSize="20sp"
+        tools:ignore="UnknownId" />
+    <TextView
+        android:id="@+id/tvTotalHarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga : "
+        android:layout_below="@id/tvIdPembeli2"
+        android:textSize="20sp"
+        tools:ignore="UnknownId" />
+    <TextView
+        android:id="@+id/tvIdBaju2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Baju : "
+        android:layout_below="@id/tvTotalHarga2"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtIdTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id transaksi"
+        android:layout_toRightOf="@+id/tvIdTransaksi2"
+        android:layout_alignBaseline="@+id/tvIdTransaksi2"
+        tools:ignore="UnknownId" />
+    <EditText
+        android:id="@+id/edtIdPembeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="id transaksi"
+        android:layout_alignBaseline="@+id/tvIdPembeli2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"/>
+
+    <EditText
+        android:id="@+id/edtTotalHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Total Harga"
+        android:layout_alignBaseline="@+id/tvTotalHarga2"
+        android:layout_alignLeft="@+id/edtIdPembeli"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edtIdBaju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id Baju"
+        android:layout_alignBaseline="@+id/tvIdBaju2"
+        android:layout_alignLeft="@+id/edtIdTransaksi"
+        tools:ignore="UnknownId" />
+    <RelativeLayout
+        android:id="@+id/Relativelayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIdTiket2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="UnknownId">
+        <Button
+            android:id="@+id/btInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btGet"
+            android:background="@color/indigo"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btInsert"
+            android:background="@color/plum"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btUpdate"
+            android:background="@color/colorAccent"
+            android:text="Delete"/>
+
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btDelete"
+            android:text="Back"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Muncul disini"
+        android:layout_below="@+id/Relativelayout2"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"/>
+</RelativeLayout>

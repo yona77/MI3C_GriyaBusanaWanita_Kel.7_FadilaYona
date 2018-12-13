@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarInsertTransaksi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Insert Data Transaksi"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvIdPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/tvTitle"
+            android:text="Id Pembeli :"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddIdPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdPembeli"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvIdPembeli"
+            android:hint="Id Pembeli"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvIdBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdPembeli"
+            android:text="Id Baju :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddIdBaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdBaju"
+            android:layout_alignLeft="@+id/edtAddIdPembeli"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvIdBaju"
+            android:hint="Id Baju"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdBaju"
+            android:text="Total Harga :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddTotalHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTotalHarga"
+            android:layout_alignLeft="@+id/edtAddIdPembeli"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvTotalHarga"
+            android:hint="Total Harga"
+            android:layout_alignParentRight="true" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalHarga"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btAddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Insert"/>
+
+            <Button
+                android:id="@+id/btAddBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/indigo"
+                android:textColor="@color/white"
+                android:text="Back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+</ScrollView>

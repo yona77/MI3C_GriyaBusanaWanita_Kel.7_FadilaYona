@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarInsertPembeli">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+     <TextView
+         android:id="@+id/tvTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="50dp"
+         android:text="Tambah Data Pembeli"
+         android:layout_centerHorizontal="true"
+         android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/tvTitle"
+            android:text="Username : "
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUsername"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvUsername"
+            android:hint="Username"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:text="Password :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPassword"
+            android:layout_alignLeft="@+id/edtAddUsername"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvPassword"
+            android:hint="Password"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Nama : "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddNama"
+            android:hint="Nama"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddNama"
+            android:text="Alamat :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddAlamatPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddAlamat"
+            android:layout_alignLeft="@+id/edtAddNamaPembeli"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddAlamat"
+            android:hint="Alamat"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvAddTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddAlamat"
+            android:text="Telepon :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddTelpPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddTelp"
+            android:layout_alignLeft="@+id/edtAddNamaPembeli"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddTelp"
+            android:hint="Telp"
+            android:inputType="phone"
+            android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAddTelp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btAddData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Insert"/>
+
+                <Button
+                    android:id="@+id/btAddBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:text="Back"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/LinearLayout"
+                android:hint="Pesan"
+                android:inputType="textMultiLine"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+</ScrollView>
