@@ -13,9 +13,11 @@ import com.example.fadilayona.griyabusanawanita.LayarEditBaju;
 import com.example.fadilayona.griyabusanawanita.Model.Baju;
 import com.example.fadilayona.griyabusanawanita.R;
 
+import java.text.BreakIterator;
 import java.util.List;
 
 public class BajuAdapter extends RecyclerView.Adapter<BajuAdapter.BajuViewHolder>{
+    private TextView tvNamabaju;
     List<Baju> listBaju;
 
     public BajuAdapter(List<Baju> listBaju) {
@@ -46,7 +48,7 @@ public class BajuAdapter extends RecyclerView.Adapter<BajuAdapter.BajuViewHolder
         } else {
 //          Picasso.with(holder.itemView.getContext()).load(R.drawable.biru).into(holder
 // .mPhotoURL);
-            Glide.with(holder.itemView.getContext()).load(R.drawable.baju).into(holder
+            Glide.with(holder.itemView.getContext()).load(R.drawable.Blouse).into(holder
                     .mPhotoURL);
 
 
@@ -75,13 +77,15 @@ public class BajuAdapter extends RecyclerView.Adapter<BajuAdapter.BajuViewHolder
     public class BajuViewHolder extends RecyclerView.ViewHolder {
         ImageView mPhotoURL;
         TextView tvIdBaju, tvMerk, tvTipe, tvRam, tvProcessor, tvWarna, tvHarga;
+        public BreakIterator tvKategori;
+        public TextView tvNamabaju;
 
         public BajuViewHolder(View itemView) {
             super(itemView);
             mPhotoURL = (ImageView) itemView.findViewById(R.id.imgBaju);
             tvIdBaju = (TextView) itemView.findViewById(R.id.tvIdBaju);
             tvNamabaju = (TextView) itemView.findViewById(R.id.tvNamabaju);
-            tvKategori = (TextView) itemView.findViewById(R.id.tvKategoriContent);
+            TextView tvKategori = (TextView) itemView.findViewById(R.id.tvKategoriContent);
             tvHarga = (TextView) itemView.findViewById(R.id.tvHargaContent);
         }
     }
