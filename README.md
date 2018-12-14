@@ -10,7 +10,16 @@
 Griya Busana Wanita adalah aplikasi berbasis Android yang berisikan tentang katalog baju wanita dan terdiri dari berbagai macam jenis (blouse/kaos).
 
 ## Screenshots
-![Layar Home](http://echarlie.co/wp-content/uploads/salon-booking-app-hareesh-dribbble-salon-design-app.jpg)
+![Layar Login](https://github.com/yona77/KatalogBaju_Kel.7_Fadila10-Yona28_MI3C/blob/master/Image/login.png)
+![Layar List Item](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/1.Listitem.PNG)
+![Layar List Baju](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/2.Listbaju.PNG)
+![Layar Activity Main](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/3.Activitymain.PNG)
+![Layar List](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/4.Layarlist.PNG)
+![Layar Insert](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/5.Layarinsert.PNG)
+![Layar Edit](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/6.Layaredit.PNG)
+![Layar Detail](https://github.com/yona77/MI3C_GriyaBusanaWanita_Kel.7_FadilaYona/blob/master/Gambar/7.Layardetail.PNG)
+![Layar Logout Data](https://github.com/yona77/KatalogBaju_Kel.7_Fadila10-Yona28_MI3C/blob/master/Image/logout.png)
+
 
 ## Android OS dan Level
 min Sdk version yang digunakan adalah 26
