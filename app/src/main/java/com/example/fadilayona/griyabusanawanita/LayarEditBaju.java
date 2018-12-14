@@ -1,10 +1,13 @@
 package com.example.fadilayona.griyabusanawanita;
 
+import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -80,6 +83,7 @@ public class LayarEditBaju extends AppCompatActivity {
         final ApiInterface mApiInterface = ApiClient.getClient().create(ApiInterface.class);
 
         btUpdate.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View view) {
 
@@ -105,11 +109,13 @@ public class LayarEditBaju extends AppCompatActivity {
                                 (edtIdBaju.getText().toString().isEmpty())?
                                         "" : edtIdBaju.getText().toString());
 
+                Notification.MessagingStyle.Message edtNamabaju = null;
                 RequestBody reqNamabaju =
                         MultipartBody.create(MediaType.parse("multipart/form-data"),
                                 (edtNamabaju.getText().toString().isEmpty())?
                                         "" : edtNamabaju.getText().toString());
 
+                Notification.MessagingStyle.Message edtKategori = null;
                 RequestBody reqKategori =
                         MultipartBody.create(MediaType.parse("multipart/form-data"),
                                 (edtKategori.getText().toString().isEmpty())?
