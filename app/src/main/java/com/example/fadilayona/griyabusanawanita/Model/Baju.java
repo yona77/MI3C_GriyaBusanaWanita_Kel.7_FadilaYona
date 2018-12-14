@@ -3,34 +3,25 @@ package com.example.fadilayona.griyabusanawanita.Model;
 import com.google.gson.annotations.SerializedName;
 
 public class Baju {
-    @SerializedName("idBaju")
-
+    @SerializedName("id_baju")
     private String idBaju;
-
-    @SerializedName("namaBaju")
-
-    private String namaBaju;
-
+    @SerializedName("namabaju")
+    private String namabaju;
     @SerializedName("kategori")
-
     private String kategori;
-
     @SerializedName("harga")
-
-    private String harga;
-
-    @SerializedName("gambar")
-
-    private String gambar;
-
+    private int harga;
+    @SerializedName("photo_url")
+    private String photoUrl;
     private String action;
 
-    public Baju(String idBaju, String namaBaju, String kategori, String harga, String gambar, String action) {
+    public Baju(String idBaju, String namabaju, String kategori, int harga, String photoUrl, String
+            action) {
         this.idBaju = idBaju;
-        this.namaBaju = namaBaju;
+        this.namabaju = namabaju;
         this.kategori = kategori;
         this.harga = harga;
-        this.gambar = gambar;
+        this.photoUrl = photoUrl;
         this.action = action;
     }
 
@@ -42,12 +33,12 @@ public class Baju {
         this.idBaju = idBaju;
     }
 
-    public String getNamaBaju() {
-        return namaBaju;
+    public String getNamabaju() {
+        return namabaju;
     }
 
-    public void setNamaBaju(String namaBaju) {
-        this.namaBaju = namaBaju;
+    public void setNamabaju(String namabaju) {
+        this.namabaju = namabaju;
     }
 
     public String getKategori() {
@@ -58,27 +49,26 @@ public class Baju {
         this.kategori = kategori;
     }
 
-    public String getHarga() {
+    public int getHarga() {
         return harga;
     }
 
-    public void setHarga(String harga) {
+    public void setHarga(int harga) {
         this.harga = harga;
     }
 
-    public String getGambar() {
-        return gambar;
+    public String getPhotoUrl() {
+        return photoUrl;
     }
 
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
-    public String getAction() {
-        return action;
-    }
+    public String getAction() { return action; }
 
     public void setAction(String action) {
         this.action = action;
     }
+
 }

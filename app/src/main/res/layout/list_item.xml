@@ -2,44 +2,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    android:background="@drawable/defaultimages"
+    >
+
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="169dp"
+
+        >
+
         <TextView
             android:id="@+id/tvIdTransaksi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="ID Transaksi :"
             android:layout_alignParentEnd="true"
-            android:textStyle="bold"
-            android:layout_alignParentRight="true" />
+
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="90dp"
+            android:hint="Id Transaksi : "
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp" />
 
         <TextView
             android:id="@+id/tvIdPembeli"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Id Pembeli :"
-            android:layout_below="@id/tvIdTransaksi"
-            tools:ignore="UnknownId" />
-        <TextView
-            android:id="@+id/tvTotalHarga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Total Harga :"
-            android:layout_below="@id/tvIdPembeli"
-            />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="40dp"
+            android:hint="Id Pembeli : "
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="67dp"
+            tools:ignore="RtlCompat" />
+
         <TextView
             android:id="@+id/tvIdBaju"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Id Baju :"
-            android:layout_below="@id/tvTotalHarga"
-            />
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvIdPembeli"
+            android:layout_marginTop="72dp"
+            android:hint="Id Baju : "
+            android:layout_alignLeft="@+id/tvIdPembeli" />
+
+        <TextView
+            android:id="@+id/tvIdTotalharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tvIdPembeli"
+            android:layout_marginBottom="42dp"
+            android:hint="Id Total Harga : "
+            android:layout_alignLeft="@+id/tvIdPembeli" />
     </RelativeLayout>
     <View
-        android:background="@color/dark"
+        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="3dp"/>
+        android:layout_height="5dp"/>
+
 </LinearLayout>

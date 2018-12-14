@@ -2,13 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fadilayona.griyabusanawanita">
 
-    <!-- agar apl terkoneksi jaringan -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- dibuat jika ingin membuat aplikasi yang dapat mengetahui network state -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- untuk membaca external storage -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,16 +18,18 @@
         </activity>
         <activity
             android:name=".LayarDetail"
-            android:label="Detail Trans Pembelian" />
+            android:label="Detail Transaksi" />
         <activity
-            android:name=".LayarListPembeli"
-            android:label="List Pembeli" />
+            android:name=".LayarListBaju"
+            android:label="List Baju" />
         <activity
-            android:name=".LayarInsertPembeli"
-            android:label="Insert Pembeli" />
+            android:name=".LayarInsertBaju"
+            android:label="Insert Baju" />
         <activity
-            android:name=".LayarEditPembeli"
-            android:label="Edit Pembeli" />
+            android:name=".LayarEditBaju"
+            android:label="Edit Baju" />
+        <activity
+            android:name=".OpsiMenu" />
     </application>
 
 </manifest>

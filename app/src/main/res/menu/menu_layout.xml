@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menuTambahTransaksi" android:title="Tambah Trans Pembelian"/>
-    <item android:id="@+id/menuListPembeli" android:title="List Pembeli"/>
-    <item android:id="@+id/menuInsertDataPembeli" android:title="Insert Data Pembeli"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item android:id="@+id/menuListTransaksi"
+        android:title="List Transaksi"/>
+    <item android:id="@+id/menuTambahTransaksi"
+        android:title="Tambah Transaksi"/>
+    <item android:id="@+id/menuListBaju"
+        android:title="List Baju"/>
+    <item android:id="@+id/menuInsertDataBaju"
+        android:title="Insert Data Baju"/>
 </menu>

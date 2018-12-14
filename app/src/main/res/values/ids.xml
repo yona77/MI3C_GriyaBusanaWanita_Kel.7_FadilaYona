@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="menuListBaju" type="id" />
+    <item name="edtAddHarga" type="id" />
 </resources>

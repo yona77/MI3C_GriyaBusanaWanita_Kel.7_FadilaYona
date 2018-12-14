@@ -1,5 +1,7 @@
 package com.example.fadilayona.griyabusanawanita.Model;
+
 import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class GetTransaksi {
@@ -9,19 +11,24 @@ public class GetTransaksi {
     List<Transaksi> listDataTransaksi;
     @SerializedName("message")
     String message;
+
     public void setStatus(String status) {
         this.status = status;
     }
+
     public String getMessage() {
         return message;
     }
+
     public void setMessage(String message) {
         this.message = message;
     }
+
     public List<Transaksi> getListDataTransaksi() {
         return listDataTransaksi;
     }
-    public void setListDataTransaksi(List<Transaksi> listDataTransaksi) {
+
+    public void setListDataTransaksi(List<Transaksi> listDataSuka) {
         this.listDataTransaksi = listDataTransaksi;
     }
 }

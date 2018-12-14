@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/defaultimages"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -9,65 +10,78 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
+        <TextView
+            android:id="@+id/tvNamabaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Nama Baju "
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgBaju"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tvNamabaju"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/Blouse" />
 
         <TextView
             android:id="@+id/tvIdBaju"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Daftar Baju"/>
-
-        <TextView
-            android:id="@+id/tvLine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/tvIdBaju"
-            android:textSize="16sp"
-            android:text=" - "
-            android:layout_toRightOf="@id/tvIdBaju" />
-
-        <TextView
-            android:id="@+id/tvBaju"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/tvLine"
-            android:layout_alignParentTop="true"
-            android:hint="Nama Baju"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_toRightOf="@id/tvLine" />
-
-        <ImageView
-            android:id="@+id/imgBaju"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_below="@+id/tvBaju"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/Blouse" />
-
-        <TextView
-            android:id="@+id/tvHarga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imgBaju"
-            android:layout_below="@id/tvHarga"
+            android:layout_below="@id/tvIdBaju"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/imgBaju"
-            android:hint="Rp 64000"
-            android:textSize="10sp"/>
+            android:hint="Id Baju"
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/tvKategori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdBaju"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgBaju"
+            android:hint="Kategori :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvKategoriContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKategori"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgBaju"
+            android:hint="Blouse"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKategoriContent"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgBaju"
+            android:hint="Harga :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvHargaContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tvHarga"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/imgBaju"
-            android:hint="Kategori Baju"
-            android:textSize="12sp"/>
-
-
+            android:hint="65000"
+            android:textSize="20sp"/>
     </RelativeLayout>
 
     <View

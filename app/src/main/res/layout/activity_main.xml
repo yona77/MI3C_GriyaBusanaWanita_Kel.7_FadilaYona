@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="@drawable/defaultimages"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginBottom="16dp">
-
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Aplikasi Pembelian"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:textSize="8pt"
-            android:layout_margin="5pt"
-            android:layout_alignParentLeft="true" />
 
         <Button
             android:id="@+id/btGet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/judul"
-            android:text="Get"/>
-    </RelativeLayout>
+            android:text="Get"
+            android:textSize="15sp"/>
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_launcher_background"
+            android:text="New Button"
+            android:textColor="black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </android.support.v7.widget.RecyclerView>
+
 
 </LinearLayout>
